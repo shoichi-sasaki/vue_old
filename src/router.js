@@ -21,6 +21,18 @@ export default new Router({
       // which is lazy-loaded when the route is visited.
       component: () =>
         import(/* webpackChunkName: "about" */ "./views/About.vue")
+    },
+    {
+      path: "/tetoris",
+      name: "tetoris",
+      component: () =>
+        import("./views/Tetoris.vue")
+    },
+    {
+      path: "/mytetoris",
+      name: "mytetoris",
+      component: () =>
+        import("./views/myTetoris.vue")
     }
   ]
 });
